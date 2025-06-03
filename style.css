@@ -1,0 +1,42 @@
+/* Grid layout for page */
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f0f8ff;
+  font-family: sans-serif;
+}
+
+.info, .footer {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.puzzle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flex container for puzzle */
+.flex-puzzle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 2px;
+}
+
+.flex-puzzle img {
+  width: 98px;
+  height: 98px;
+  object-fit: cover;
+}
+
+/* Hide wrong puzzle piece */
+.hidden-piece {
+  display: none;
+}
